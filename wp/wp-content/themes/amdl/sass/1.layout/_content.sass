@@ -1,0 +1,252 @@
+
+
+
+
+.section
+    padding: 40px 0 50px
+.container
+        position: relative
+.brands 
+    // margin-bottom: 30px
+    .container
+        position: absolute
+        left: 50%
+        transform: translate(-50%,-80%)
+        .wrapper
+            padding-top: 40px
+            padding-bottom: 25px
+            border-bottom: 5px $blue-ciel solid
+            background: #fff
+        .col-md-6
+            padding: 0 30px
+            img
+                width: 100%
+            &:first-child
+                border-right: 3px $blue-ciel solid
+
+.headline 
+    position: relative
+    text-align: center
+    margin-bottom: 20px
+    h1
+        display: inline-block
+        text-align: center
+        margin-bottom: 40px
+        color: $blue-ciel
+    hr
+        height: 4px
+        background-color: $blue-ciel-2
+        border: none
+        display: block
+        margin: 0 auto
+        position: relative
+        width: 30px
+        top: -25px
+        &:last-child
+            height: 2px
+            width: 140px
+            top: -26px       
+.updates
+    padding-top: 10px
+    .latest-articles
+        padding: 10px 0
+        white-space: nowrap
+        overflow: hidden
+    img
+        width: 100%
+        height: 200px
+    .article
+        transition: transform 1s ease
+        float: none
+        display: inline-block
+        
+        .card-body
+            padding-top: 15px
+            .article-date
+                white-space: normal
+                text-align: center
+                padding: 4px
+                background-color: $blue-ciel
+                text-align: center
+                color: #fff
+                font-size: 1.2rem
+                .day
+                    font-size: 2rem
+                hr
+                    margin: 5px auto
+                    width: 70%
+            .article-content
+                white-space: normal
+                .article-title 
+                    margin: 0
+                    a
+                        color: $blue-ciel-2
+                        font-size: 1.7rem
+                p
+                    margin-top: 5px
+                    font-size: 1.3rem
+                i
+                    color: #fff
+                    background-color: $blue-ciel-2
+                    border-radius: 100%
+                    padding: 5px
+                .read-more a
+                    color: $blue-ciel-2
+                    font-size: 1.2rem
+                    margin-left: 10px
+        
+    .updates-indicators 
+        position: absolute
+        bottom: 0
+        z-index: 15
+        padding-left: 0
+        margin-bottom: 0
+        text-align: center
+        list-style: none
+        right: 15px
+        left: unset
+        width: auto
+        li
+            display: inline-block
+            width: 10px
+            height: 10px
+            margin: 1px
+            text-indent: -999px
+            cursor: pointer
+            background-color: $blue-ciel-1
+            border: 1px solid #fff
+            border-radius: 0
+            &.active
+                width: 12px
+                height: 12px
+                margin: 0
+                background-color: $blue-ciel
+    
+.media-sections
+    padding: 0 // 10px
+    // background-image: url('img/bg-sections.png')
+    background-size: cover
+    background-image: linear-gradient(90deg, #113f74 50.67%, #5e91d0 31.67%, #5e91d0 81%)
+    .row .row
+        padding: 30px 0
+        text-align: center
+        p
+            margin: 5px 0 0
+            color: white
+    .container > .row > div
+        padding: 10px 15px
+        &:last-child
+            background-image: linear-gradient(110deg, transparent 10.67%, #5e91d0 0%);
+    // .carte
+    //     background-image: linear-gradient(#005FB0, #193E71)
+    // .media
+    //     background-color: $blue-ciel
+.agenda
+    background-color: $bg-blue
+    img
+        width: 100%
+    .article-title
+        font-size: 2rem
+        color: $blue-ciel-2
+    .container > .row:last-child
+        position: relative
+        // display: flex
+    .agenda-articles
+        overflow: hidden
+        // white-space: nowrap
+        .agenda-article
+            transition: transform 1s ease;
+            // display: inline-block;
+            // float: none;
+            // white-space: normal
+
+    .timeline
+        position: absolute
+        width: 6px
+        background-color: $blue-ciel-1
+        // top: 0
+        // bottom: 0
+        // border-radius: 5px
+        left: 7%
+        // margin-left: -3px
+        // z-index: 0
+        height: 90%
+        top: 5%
+        z-index: 999
+        div
+            cursor: pointer
+            content: ""
+            position: absolute
+            display: block
+            height: 15px
+            width: 15px
+            left: -4px
+            background-color: $grey
+            border: $blue-ciel-1 solid 3px
+            &.active
+                background-color: $blue-ciel-2
+                border-color: #fff
+                span:last-child
+                    color: $blue-ciel-2
+                    font-size: 1.2rem
+            &:nth-child(2)
+                top: 50%
+                transform: translateY(-50%)
+            &:last-child
+                bottom: 0
+            span:last-child
+                color: $grey
+                font-weight: bold
+                font-size: 1rem
+                // background-color: red
+                position: absolute
+                right: 20px
+                top: -15px
+                text-align: right
+
+.partners
+    text-align: center
+    .partners-logos
+        position: relative
+        .partners-wrapper
+            white-space: nowrap;
+            overflow: hidden;
+            .partner
+                width: 20%
+                float: none
+                display: inline-block
+    .left, .right
+        cursor: pointer
+        color: #ededed
+        position: absolute
+        top: 2%
+        font-size: 5rem
+    .left
+        left: 0
+    .right
+        right: 0
+
+.community
+    padding: 30px 0
+    background-color: $bg-blue
+    i
+        margin-right: 10px
+    h2
+        font-size: 2rem
+        padding-left: 30px;
+        position: relative;
+        &:before
+            content: "";
+            background-image: url('img/folder.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 0;
+    .join-btn
+        background-color: $blue-ciel
+        color: #fff
+        padding: 10px 40px
+        margin-top: 20px
+        border-radius: 0
